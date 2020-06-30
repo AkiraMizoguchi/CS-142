@@ -1,9 +1,10 @@
-public static int maxLength(ArrayList<String> ArrayListString){
-        int longest=0;
-        for (int i=0;i<ArrayListString.size();i++){
-            if(ArrayListString.get(i).length()>longest){
-                longest=ArrayListString.get(i).length();
+ public static int maxLength(Set<String> set){
+        int max=0;
+        for (String str: set){
+            if(str.length()>max){
+                max=str.length();
             }
         }
-        return longest;
+
+        return max;
     }
